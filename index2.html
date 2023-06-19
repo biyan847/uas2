@@ -1,0 +1,56 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="javascript.js"></script>
+        <link rel="stylesheet" href="css.css" />
+
+        <TITLE>DOM Javascript</TITLE>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h3>Pendaftaran Peminatan</h3>
+            </div>
+        <form action="">
+            <label for="nama">Nama</label><br>
+            <input type="text" placeholder="Nama Anda" id="nama"><br><br>
+            <label for="nim">Nim</label><br>
+            <input type="text" placeholder="Nim Anda" id="nim"><br>
+            <p>Peminatan pada bidang</p>
+
+            <input type="radio" name="peminatan" id="programming" value="programming"/>
+            <label for="programming">Programming</label> <br/>
+
+            <input type="radio" name="peminatan" id="desain" value="desain"/>
+            <label for="programming">Desain</label> <br/>
+
+            <input type="radio" name="peminatan" id="jaringan" value="jaringan"/>
+            <label for="programming">jaringan</label> <br/>
+
+            <input type="radio" name="peminatan" id="data" value="data"/>
+            <label for="programming">data</label> <br/>
+            
+            <label for="">alamat</label> <br>
+            <textarea placeholder="Tulis alamatmu disini" name="alamat" id="alamat" cols="30" rows="5"></textarea><br><br>
+            
+                <label for="Pilih angkatan">Pilih Angkatan</label><br>
+                <select name="angkatan" id="angkatan">
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                </select>
+                <br><br>
+        
+            
+            <label for="tanggal">Tanggal</label>
+            <input type="date" id="tanggal">
+
+           
+             <button type="submit" onclick="kirimdata()">kirim</button>
+        </form>    
+        </div>
+    </body>
+</html>
